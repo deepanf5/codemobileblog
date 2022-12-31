@@ -1,0 +1,730 @@
+/* root */
+
+:root {
+    --color-footer:#F9B208;
+    --color-body:#5C5757;
+    --color-header:#ecf0f1;
+    --color-heading:#333333;
+    --color-hover:#FC5404;
+    --color-primary:#706C61;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+/* body */
+body{
+    color:var(--color-heading);
+    font-family: Poppins,Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.2;
+}
+
+/* typography */
+
+h1,h2,h3 {
+    color:var(--color-body);
+    font-size: 3rem;
+    line-height:2.1rem;
+    margin-bottom: 1rem;
+}
+h1{
+    font-size:5rem;
+    line-height:5rem;
+}
+h2 {
+    color:var(--color-primary);
+    font-size:4rem;
+}
+h3 {
+    font-size:2rem;
+}
+h4 {
+    font-size:2rem;
+}
+p {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-top:0;
+}
+/* links */
+a {
+    text-decoration:none;
+}
+/* background setup */
+.header {
+  background-image:linear-gradient( to right,#ecf0f1,#ecf0f1c5,#ecf0f10a 80%,#eaeaea07),url(../images/banner9-min.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+    clip-path: polygon(100% 0, 100% 50%, 100% 83%, 50% 100%, 0 83%, 0% 0%);
+    display: flex;
+    flex-direction: column;
+
+}
+/* hero text */
+.palyerinfo {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    color: var(--color-heading);
+}
+
+.hero-title {
+    font-size:4rem;
+    font-weight:bold;
+
+}
+.hero-image  {
+        
+    width: 100%;
+
+}
+.about-playerinfo {
+    padding-top: 5rem;
+    font-weight: bold;
+}
+
+.clearfix::after {
+    content:' ';
+    display: block;
+    clear: both;
+}
+.image-responsive {
+    width: 100%;
+    height: auto;
+}
+.title{
+    margin-top:10rem;
+    margin-bottom: 10rem;
+    text-align: center;
+    padding-left: 1rem;
+
+}
+.rank-img {
+    width: 100%;
+    height: 25rem;
+    float: left;
+    background-color: var(--color-header);
+    align-items: center;
+    
+}
+
+.player-description {
+    padding-left: 2rem;
+    right: 5rem;
+    padding-right: 2rem;
+}
+.player-title {
+    text-transform: capitalize;
+    padding-left:2rem;
+    padding-top: 5rem;
+    
+    
+}
+/* cards */
+
+/* swiper */
+.swiper {
+    margin-top: 10rem;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  .swiper-title {
+      text-align: center;
+      padding-bottom: 5rem;
+      text-transform: capitalize;
+  }
+
+
+
+
+
+
+
+
+
+.card {
+    margin-top:10rem;
+    border-radius: 7px;
+    box-shadow: 0 0 10px 5px var(--color-heading);
+    display: flex;
+    flex-direction: column;
+    transform-origin: left top;
+    transition: transform 1s;
+}
+
+
+
+.card-title {
+    text-align: center;
+}
+.template {
+    width: 100%;
+    padding: 3rem;
+}
+.card-header,.card-body {
+    padding: 2rem 6rem;
+}
+.card-header {
+    background-color: var(--color-header);
+    color: var(--color-heading);
+}
+.card-description {
+    font-size:2rem;
+    font-weight:300;
+    color: var(--color-body);
+    letter-spacing: 0.2rem;
+}
+.card-p {
+    text-align: center;
+}
+.list {
+    color: var(--color-body);
+
+}
+.list-tick {
+    list-style-image: url(../images/tick.png);
+    padding-left: 3rem;
+}
+.list-tick .list-items {
+    padding-left:10rem;
+
+}
+.template .list-item {
+    margin-bottom: 4rem;
+}
+.avatar2 {
+    width: 20%;
+    height: 25rem;
+    float: right;
+    background-color: var(--color-header);
+    align-items: center;
+    margin-right: 0.5rem;
+
+}
+.rank2-img {
+    width: 100%;
+    float: right;
+    background-color: var(--color-header);
+}
+
+
+
+.summary {
+    background-image:linear-gradient(to left,#ecf0f1,#ecf0f1,#eaeaea86), url(../images/header7.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: 5rem;
+    height: fit-content;
+
+}
+.summary-heading {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top:5rem;
+}
+.summary-text {
+    text-align: center;
+    padding-top:5rem;
+    padding-bottom: 5rem;
+}
+.box-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.box {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+    margin-left: 0;
+    transition: all 2s;
+}
+
+.box-title {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 2rem;
+}
+
+.box-img-res {
+    width: 100%;
+    height: auto;
+    margin:auto;
+    display:block;
+    padding:2rem;
+}
+.box-description {
+    text-align: left;
+    padding: 2rem;
+    justify-content:left;
+    
+}
+
+.top-bg {
+    background-color: var(--color-header);
+}
+
+.season {
+    
+    width: 100%;
+    height: 40rem;
+    background-position: center center;
+    
+}
+.season-title {
+    text-align: center;
+    padding-top:5rem;
+    line-height:10rem;
+    text-transform: capitalize;
+}
+.season-img {
+    width: 100%;
+    padding-bottom: 10rem;
+    display: block;
+}
+.season-content {
+    text-align: center;
+    padding-bottom: 15rem;
+}
+.season-heading {
+    text-align: center;
+    text-transform: capitalize;
+}
+.season-description {
+    padding-bottom:3rem;
+}
+.season-btn {
+    padding: 2rem 6rem;
+    background-color: var(--color-heading);
+    color: var(--color-header);
+    text-transform: capitalize;
+    transition:background-color 3s ease-in-out;
+}
+
+.season-btn:hover {
+    background-color: var(--color-hover);
+}
+
+
+.footer-section  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 10rem;
+    width: 100%;
+    margin-bottom: 0;
+}
+.footer-header {
+    margin-top:10rem
+    
+}
+.footer-about {
+    margin: 0;
+    font-size: calc(1rem + 1vw);
+}
+.footer-logo {
+    
+    width: 30%;
+
+}
+.footer-section{
+    margin-top: 40rem;
+    background-color: var(--color-header);
+}
+
+
+.form-group {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size:calc(0.1 + 1vw);
+    
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 80%;
+    border: 2px solid var(--color-heading);
+    padding:1rem 1rem;
+    border-radius:5px;
+    transition: border-color 0.30s box-shadow 0.35s;
+    border:0;
+    
+
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="textarea"] {
+    border-color: var(--color-hover);
+    outline: 0;
+    box-shadow: 0 0 5px 4px var(--color-hover);
+
+
+}
+
+textarea {
+    width: 80%;
+    border: 0;
+    padding:2rem;
+    border-radius:5px;
+    outline: 0;
+    transition:border-color 0.15s;
+
+}
+textarea:hover {
+   
+    border-radius:5px;
+    outline: 0;
+    box-shadow: 0 0 5px 4px var(--color-hover);
+
+}
+textarea[type="textarea"] {
+    border-color: var(--color-hover);
+    outline: 0;
+    box-shadow: 0 0 0 0.8px rgba(252, 83, 4, 0.596);
+
+}
+button {
+    position: relative;
+    background-color:var(--color-heading);
+    color: var(--color-header);
+    border: 0;
+    padding-top: 2rem;
+    padding:2rem 2rem;
+    outline:0;
+    width: 100%;
+    
+    
+}
+
+button:hover {
+    background-color: var(--color-hover);
+
+}
+form {
+    margin-top:10rem;
+   
+}
+ .icon {
+     
+    color: var(--color-header);
+    font-size:2rem;
+    background-color:var(--color-heading);
+    padding:1rem 1.5rem;
+    text-align:center;
+    transition:   background-color 1s;
+}
+.icon:hover {
+     
+    color: var(--color-header);
+    background-color:var(--color-hover);
+  
+}
+.footer-links a {
+    color: var(--color-heading);
+    transition: color 1s;
+}
+.footer-links a:hover {
+    color: var(--color-hover);
+    cursor: pointer;
+
+}
+.copy-right {
+    color: var(--color-header);
+    text-align:center;
+    background-color: var(--color-heading);
+    font-size:12px;
+    align-items: center;
+    justify-content:center;
+    
+}
+span {
+    color: var(--color-heading);
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+.top-link {
+    padding-left: 5rem;
+    width: 100%;
+    background-color: var(--color-header);
+    
+}
+.top {
+    animation: top;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    padding-left: 2rem;
+    
+
+}
+@keyframes top {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1024px) {
+    body {
+        font-size: 1.4rem;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size:3rem;
+    }
+    h3 {
+        font-size:2rem;
+    }
+    
+    p {
+        font-size:1.4rem;
+        
+    }
+    .palyerinfo {
+    width: 100%;
+    padding: 10rem;
+    color: var(--color-heading);
+        text-align: left;
+    }
+    /* hero-text */
+
+    .header {
+        clip-path: polygon(100% 0, 100% 50%, 100% 85%, 99% 85%, 0 85%, 0% 0%);
+        display: flex;
+        flex-direction: row;
+    }
+    .hero-title {
+        padding-top:0;
+        font-size:8rem;
+        font-weight:bold;
+    
+    }
+    .hero-image  {
+        padding-top: 5rem;
+        padding-right: 1rem;
+        width: 100%;
+    }
+    .img-container {
+        width: 100%;
+    }
+    .img-responsive {
+        width: 100%;
+        
+    }
+    .rank-img {
+        width: 50rem;
+        height: 25rem;
+        float: left;
+        background-color: var(--color-header);
+        margin-right: 5rem;
+        margin-left: 5rem;
+        align-items: center;
+        
+    }
+    .player-title {
+        margin-top:15rem;
+       
+    }
+    
+    .clear {
+        clear: both;
+    }
+
+      
+    
+    .hero-image  {
+        padding-top: 5rem;
+        padding-right: 1rem;
+        width: 100%;
+    }
+    .img-container {
+        width: 100%;
+    }
+    .img-responsive {
+        width: 100%;
+        
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 40rem;
+        height: 40rem;
+      }
+    
+    .template {
+        width: 100%;
+        padding-left:40rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .card {
+        margin: 20rem;
+       margin-left: 5rem;
+      
+    }
+    .card:hover {
+        transform: scale(1.1);
+        
+    
+    }
+    .list-tick .list-items {
+        padding-left:5rem;
+    }
+    .rank2-img {
+        margin-right: 10rem;
+        width: 60rem;
+        
+    }
+    .summary {
+        height: 70rem;
+    
+    }
+    .player-content {
+        width: 70ch;
+    }
+    .box-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .box {
+        width: 25%;
+        height: auto;
+    }
+    .box-title {
+        text-align: center;
+        
+    }
+    .box-img-res {
+        width: 100%;
+        height: auto;
+        margin:auto;
+        display:block;
+        padding:2rem;
+    }
+    .box:hover {
+        margin: 10rem;
+    }
+    
+
+
+
+    .footer-section  {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 15rem;
+        margin-top: 10rem;
+        padding-right: 15rem;
+    }
+    .footer-header {
+        margin-top:10rem;
+        
+    }
+    h4 {
+        font-size:2rem;
+    }
+    .season-title {
+        
+        margin-top:20rem;
+    }
+    .footer-section{
+        margin-top: 100rem;
+        background-color: var(--color-header);
+    }
+    
+    
+    .footer-about {
+        margin: 0;
+        font-size: 1.4rem;
+        padding-bottom: 2rem;
+    }
+    
+    
+    form {
+        margin-top:10rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-logo {
+        width: 20%;
+    
+    }
+    button {
+        padding:2rem;
+    }
+    .icon {
+     
+        font-size:2rem;
+        padding:0.8rem 1.5rem;
+    }
+    input[type="text"],
+    input[type="email"] {
+    width: 100%;
+    }
+    textarea {
+        width: 100%;
+    }
+    
+    
+    
+
+   
+    
+    
+    
+   
+   
+
+}
